@@ -35,7 +35,7 @@ Public Folder: Hosts static files.
 Clone the Repository
 bash
 Copy code
-git clone https://github.com/<your-username>/<repo-name>.git  
+git clone https://github.com/sabha-mushtaq/userpage-react  
 cd <repo-name>  
 Install Dependencies
 bash
