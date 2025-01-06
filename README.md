@@ -1,3 +1,4 @@
+https://github.com/user-attachments/assets/edaea7e3-2da7-4e7b-8a6a-60559c8cb780
 # Counter Using React
 
 A simple and interactive counter application built using **React** and styled with **Tailwind CSS**. This project demonstrates fundamental React concepts such as state management, event handling, and responsive design using modern styling techniques.
