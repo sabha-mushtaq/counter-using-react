@@ -1,42 +1,47 @@
-.con {
-    @apply h-[500px] w-[90%] max-w-[400px] border-[1px] border-black mx-auto rounded-lg shadow-lg shadow-gray-400; /* Center container and make it responsive */
-}
-
-.logo {
-    @apply w-full h-1/5 flex justify-center items-center;
-}
-
-.logo-img {
-    @apply w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32; /* Responsive sizes */
-    @apply object-contain mx-auto; /* Maintain aspect ratio and center */
-}
-
-.input-fields {
-    @apply flex flex-col w-full h-2/5 items-center gap-4 p-4; /* Add spacing and padding */
-}
-
-input {
-    @apply w-[90%] max-w-[300px] h-[30%] p-2 rounded-md border border-gray-300; /* Responsive width and styled inputs */
-}
-
-.button {
-    @apply flex flex-col justify-center items-center space-y-4; /* Center and space out button and paragraph */
-    padding: 1rem 0; /* Adds space around the content */
-    width: auto; /* Remove any forced width */
-}
-
-button {
-    @apply px-6 py-2 bg-blue-500 text-white rounded-md shadow-md hover:bg-blue-600;
-    width: 50% !important; /* Force button to take up 50% width */
-}
-
-p {
-    @apply text-sm text-center mt-2; /* Added text style and margin top for spacing */
-}
-
-span {
-    @apply text-blue-500 cursor-pointer; /* Adds blue color and pointer on hover */
-}
-
-
-
+/* Global Container Styles */
+.container {
+    @apply w-[90%] max-w-[400px] h-[500px] mx-auto rounded-lg border-[1px] border-blue-600 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600; /* Blue gradient */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Count Section Styles */
+  .count-container {
+    @apply h-[50%] w-full flex justify-center items-center bg-opacity-50 bg-blue-900; /* Semi-transparent blue background */
+    border-bottom: 2px solid white; /* Stylish separation line */
+  }
+  
+  .count {
+    @apply w-[120px] h-[120px] bg-white text-blue-600 text-4xl font-semibold rounded-full flex justify-center items-center;
+  }
+  
+  /* Buttons Section Styles */
+  .buttons-container {
+    @apply h-[50%] w-full flex justify-around items-center;
+  }
+  
+  button {
+    @apply w-[120px] h-[50px] text-lg font-semibold text-white rounded-md cursor-pointer border-none transition transform duration-300;
+  }
+  
+  /* Specific Styles for Buttons */
+  .increment {
+    @apply bg-gradient-to-r from-blue-500 to-blue-700 hover:scale-105; /* Blue gradient for increment */
+  }
+  
+  .decrement {
+    @apply bg-gradient-to-r from-blue-600 to-blue-800 hover:scale-105; /* Darker blue gradient for decrement */
+  }
+  
+  /* Button active state */
+  button:active {
+    @apply scale-95; /* Click effect: shrink the button */
+  }
+  
+  /* Hover effect */
+  button:hover {
+    @apply transform scale-105; /* Hover effect: grow the button */
+  }
+  
