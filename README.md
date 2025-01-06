@@ -45,4 +45,4 @@ Run the Application
 bash
 Copy code
 npm run dev  
-This will start the development server, and you can view the app in your browser at http://localhost:3000.
+This will start the development server, and you can view the app in your browser at  http://localhost:5174/
