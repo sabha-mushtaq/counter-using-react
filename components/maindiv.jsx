@@ -1,6 +1,6 @@
 import  { useState } from 'react';
 import './maindiv.css';
-
+import logo from './assets/inst.png';
 function Container() {
     // Create a state variable to toggle between Sign In and Sign Up forms
     const [isSignUp, setIsSignUp] = useState(false);
@@ -14,11 +14,7 @@ function Container() {
         <> 
             <div className="con">
                 <div className="logo">
-                    <img
-                        src="src/assets/inst.png"
-                        alt="logo"
-                        className="logo-img"
-                    />
+                <img src={logo} alt="logo" className="logo-img" />
                 </div>
                 <div className="input-fields">
                     {/* Common inputs for both Sign In and Sign Up */}
