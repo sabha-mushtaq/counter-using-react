@@ -1,0 +1,40 @@
+.con {
+    @apply h-[500px] w-[90%] max-w-[400px] border-[1px] border-black mx-auto rounded-lg shadow-lg shadow-gray-400; /* Center container and make it responsive */
+}
+
+.logo {
+    @apply w-full h-1/5 flex justify-center items-center;
+}
+
+.logo-img {
+    @apply w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32; /* Responsive sizes */
+    @apply object-contain mx-auto; /* Maintain aspect ratio and center */
+}
+
+.input-fields {
+    @apply flex flex-col w-full h-2/5 items-center gap-4 p-4; /* Add spacing and padding */
+}
+
+input {
+    @apply w-[90%] max-w-[300px] h-[30%] p-2 rounded-md border border-gray-300; /* Responsive width and styled inputs */
+}
+
+.button {
+    @apply w-full h-2/5 flex flex-col justify-center items-center space-y-4; /* Center and space out button and paragraph */
+    padding: 1rem 0; /* Adds space around the content */
+}
+
+button {
+    @apply px-6 py-2 bg-blue-500 w-[50%] text-white rounded-md shadow-md hover:bg-blue-600; /* Styled responsive button */
+}
+
+p {
+    @apply text-sm text-center mt-2; /* Added text style and margin top for spacing */
+}
+
+span {
+    @apply text-blue-500 cursor-pointer; /* Adds blue color and pointer on hover */
+}
+
+
+
