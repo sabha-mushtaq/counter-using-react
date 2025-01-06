@@ -20,12 +20,14 @@ input {
 }
 
 .button {
-    @apply w-full h-2/5 flex flex-col justify-center items-center space-y-4; /* Center and space out button and paragraph */
+    @apply flex flex-col justify-center items-center space-y-4; /* Center and space out button and paragraph */
     padding: 1rem 0; /* Adds space around the content */
+    width: auto; /* Remove any forced width */
 }
 
 button {
-    @apply px-6 py-2 bg-blue-500 w-[50%] text-white rounded-md shadow-md hover:bg-blue-600; /* Styled responsive button */
+    @apply px-6 py-2 bg-blue-500 text-white rounded-md shadow-md hover:bg-blue-600;
+    width: 50% !important; /* Force button to take up 50% width */
 }
 
 p {
